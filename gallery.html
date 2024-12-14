@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            GALLERY
+        </nav>
+        <div class="gallery">
+            <ul class="controls">
+                <li class="buttons active" data-filter="all">ALL</li>
+                <li class="buttons" data-filter="cake">CAKE</li>
+                <li class="buttons" data-filter="chocolate">CHOCOLATE</li>
+                <li class="buttons" data-filter="ice-cream">ICE CREAM</li>
+                <li class="buttons" data-filter="juice">JUICE</li>                
+                <li class="buttons" data-filter="snacks">SNACKS</li>                       
+            </ul>
+        </div>
+        <div class="image-container">
+            <a href="cake1.jpg" class="image cake">
+                <img src="cake1.jpg" alt="">
+            </a>
+            <a href="cake2.avif" class="image cake">
+                <img src="cake2.avif" alt="">
+            </a>
+            <a href="cake3.jpg" class="image cake">
+                <img src="cake3.jpg" alt="">
+            </a>
+            <a href="cake4.jpg" class="image cake">
+                <img src="cake4.jpg" alt="">
+            </a>
+            <a href="cake5.jpg" class="image cake">
+                <img src="cake5.jpg" alt="">
+            </a>
+            <a href="cake6.jpg" class="image cake">
+                <img src="cake6.jpg" alt="">
+            </a>
+            <a href="cake7.jpg" class="image cake">
+                <img src="cake7.jpg" alt="">
+            </a>
+            <a href="cake8.jpg" class="image cake">
+                <img src="cake8.jpg" alt="">
+            </a>
+            <a href="cake9.jpeg" class="image cake">
+                <img src="cake9.jpeg" alt="">
+            </a>
+            <a href="chocolate1.jpg" class="image chocolate">
+                <img src="chocolate1.jpg" alt="">
+            </a>
+            <a href="chocolate2.jpg" class="image chocolate">
+                <img src="chocolate2.jpg" alt="">
+            </a>
+            <a href="chocolate3.jpg" class="image chocolate">
+                <img src="chocolate3.jpg" alt="">
+            </a>
+            <a href="chocolate4.jpg" class="image chocolate">
+                <img src="chocolate4.jpg" alt="">
+            </a>
+            <a href="chocolate5.jpg" class="image chocolate">
+                <img src="chocolate5.jpg" alt="">
+            </a>
+            <a href="chocolate6.jpg" class="image chocolate">
+                <img src="chocolate6.jpg" alt="">
+            </a>
+            <a href="chocolate7.jpg" class="image chocolate">
+                <img src="chocolate7.jpg" alt="">
+            </a>
+            <a href="chocolate8.jpg" class="image chocolate">
+                <img src="chocolate8.jpg" alt="">
+            </a>
+            <a href="icecream1.jpg" class="image ice-cream">
+                <img src="icecream1.jpg" alt="">
+            </a>
+            <a href="icecream2.jpg" class="image ice-cream">
+                <img src="icecream2.jpg" alt="">
+            </a>          
+            <a href="icecream3.jpg" class="image ice-cream">
+                <img src="icecream3.jpg" alt="">
+            </a>            
+            <a href="icecream4.jpg" class="image ice-cream">
+                <img src="icecream4.jpg" alt="">
+            </a>                                 
+            <a href="icecream5.jpg" class="image ice-cream">
+                <img src="icecream5.jpg" alt="">
+            </a>
+            <a href="icecream6.jpg" class="image ice-cream">
+                <img src="icecream6.jpg" alt="">
+            </a>
+            <a href="juice1.avif" class="image juice">
+                <img src="juice1.avif" alt="">
+            </a>
+            <a href="juice2.avif" class="image juice">
+                <img src="juice2.avif" alt="">
+            </a>
+            <a href="juice3.jpg" class="image juice">
+                <img src="juice3.jpg" alt="">
+            </a>
+            <a href="juice4.jpg" class="image juice">
+                <img src="juice4.jpg" alt="">
+            </a>
+            <a href="juice5.jpg" class="image juice">
+                <img src="juice5.jpg" alt="">
+            </a>
+            <a href="juice6.jpg" class="image juice">
+                <img src="juice6.jpg" alt="">
+            </a>
+            <a href="snacks1.jpg" class="image snacks">
+                <img src="snacks1.jpg" alt="">
+            </a>
+            <a href="snacks2.jpg" class="image snacks">
+                <img src="snacks2.jpg" alt="">
+            </a>
+            <a href="snacks3.jpg" class="image snacks">
+                <img src="snacks3.jpg" alt="">
+            </a>
+            <a href="snacks4.jpg" class="image snacks">
+                <img src="snacks4.jpg" alt="">
+            </a>
+            <a href="snacks5.jpg" class="image snacks">
+                <img src="snacks5.jpg" alt="">
+            </a>
+            <a href="snacks6.jpg" class="image snacks">
+                <img src="snacks6.jpg" alt="">
+            </a>
+            <a href="snacks7.jpg" class="image snacks">
+                <img src="snacks7.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--magnetic popup link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function(){
+             $(".buttons").click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+                var filter=$(this).attr("data-filter")
+                if (filter =="all") {
+                    $('.image').show(200);
+                }
+                else{
+                    $('.image').not('.'+filter).hide(200);
+                    $('.image').filter('.'+filter).show(200);
+                }
+             });
+             $(".image-container").magnificPopup({
+                delegate:"a",
+                type:"image",
+                gallery:{
+                    enabled:true 
+                }
+             })
+        });
+    </script>
+</body>
+</html>
