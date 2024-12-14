@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    justify-content: space-between;
+    background-color: #222a35;
+    height: 50px;
+    padding: 10px 20px;
+}
+.nav h1{
+    color: #eee;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 15px;
+}
+.nav button{
+    color: #ddd;
+    background:linear-gradient(45deg,#6889ff,#c668ff);
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 10%;
+}
+.nav button a{
+    color: #171721;
+    text-decoration: none;
+
+}
+.header{
+    background-color:#222a35;
+    color: #fff;
+}
+.header button{
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 1.5 rem;
+    border: none;
+    background:linear-gradient(45deg,#6889ff,#c668ff);
+}
+.header button a{
+    color: #171721;
+    text-decoration: none;
+}
+.skill{
+    background:linear-gradient(90deg,#3b4456, #263346);
+    padding: 15px 0px;
+    text-align: center;
+}
+.fe{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+.ot{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.html-icon{
+    border: 1.5px solid #373737;
+    border-radius: 10px;
+    padding: 5px;
+}
+.css-icon{
+    border: 1.5px solid #373737;
+    border-radius: 10px;
+    padding: 5px;
+}
+.js-icon{
+    border: 1.5px solid #373737;
+    border-radius: 10px;
+    padding: 5px;
+}
+.react-icon{
+    border: 1.5px solid #373737;
+    border-radius: 10px;
+    padding: 5px;
+}
+.bootstrap-icon{
+    border: 1.5px solid #373737;
+    border-radius: 10px;
+    padding: 5px;
+}
+.git-icon{
+    border: 1.5px solid #373737;
+    border-radius: 10px;
+    padding: 5px;
+}
+.github-icon{
+    border: 1.5px solid #373737;
+    border-radius: 10px;
+    padding: 5px;
+}
+.vscode-icon{
+    border: 1.5px solid #373737;
+    border-radius: 10px;
+    padding: 5px;
+}
+.mysql-icon{
+    border: 1.5px solid #373737;
+    border-radius: 10px;
+    padding: 5px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hiring{
+    text-align:center;
+    background: linear-gradient(-90deg,#171e28,#251d2d);
+    color: #eee;
+}
+.education{
+    background-color: #222a35;
+}
+.education-1{
+    color: #ddd;
+    border:2px solid rgb(133, 76, 230);
+    box-shadow: 0px 5px 25px #395681; 
+    padding: 10px 5px; 
+    border-radius: 5px;
+}
+.contact{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 10px 0px;  
+    background: linear-gradient(-90deg,#171e28,#251d2d);
+}
+.contact-1{
+    color: #ddd;
+}
+.contact-2{
+    color: #fff;
+    background-color: #171721;
+    box-shadow: 0px 10px 25px #28364b;
+    border-radius: 10px;
+    padding: 15px;
+}
+form{
+    gap: 10px;
+
+}
+.contact-2 input{
+    color: #eee;
+    border-color: #eee;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    background: transparent;
+}
+.contact-2 button{
+    height: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background:linear-gradient(45deg,#6889ff,#c668ff) ;
+}
+.footer{
+    color: #ddd;
+    background-color: #1a1a26;
+    padding: 20px 0px;
+}
+.footer_icon {
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+}
+.footer_icon a{
+    color: #ddd;
+    font-size: 1rem;
+    padding: 25px;
+}
