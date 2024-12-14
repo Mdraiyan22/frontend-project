@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Playlist</title>
+  <link rel="stylesheet" href="Music-player.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+</head>
+<body>
+  <div class="playlist-container">
+    <h1>Music Playlist</h1>
+    <div class="player">
+      <audio id="audio"></audio>
+      <div class="controls">
+        <i id="prev" class="material-icons">skip_previous</i>
+        <i id="play" class="material-icons">play_arrow</i>
+        <i id="next" class="material-icons">skip_next</i>
+      </div>
+      <p id="song-title">Select a song</p> 
+      <div class="timer">
+        <span id="current-time">00:00</span> / <span id="total-time">00:00</span>
+      </div>
+    </div>
+    <ul class="playlist" id="playlist">
+      <!-- Songs in js file -->
+    </ul>
+  </div>
+  <script src="Music-player.js"></script>
+</body>
+</html>
